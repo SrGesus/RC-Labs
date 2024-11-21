@@ -26,7 +26,7 @@ int main(void)
   hints.ai_family = AF_INET;       // IPv4
   hints.ai_socktype = SOCK_STREAM; // UDP socket
 
-  errcode = getaddrinfo("Versailles", PORT, &hints, &res);
+  errcode = getaddrinfo("localhost", PORT, &hints, &res);
   if (errcode != 0) /*error*/
     exit(1);
 
